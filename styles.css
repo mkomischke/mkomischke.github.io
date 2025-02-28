@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+h1, h3, p, a, li {
+    font-family: "Dongle", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#home {
+    display: flex;
+    margin-top: 1%;
+}
+
+#left {
+    width: 68%;
+}
+
+#display {
+    width: 100%;
+    height: 70%;
+}
+
+#right {
+    margin-left: 8%;
+    margin-top: 3%;
+}
+
+#photo-options {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 3px;
+}
+
+#left-button img, #middle-button img, #right-button img {
+    width: 100%;
+    height: 100%;
+}
+
+.webpage-title {
+    margin-bottom: 1px; 
+    margin-top: 1px; 
+    text-align: center; 
+    color: darkblue;
+}
+
+#research-interests {
+    display: grid;
+    margin: 2%;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    grid-template-areas:
+    "a b c"
+    "d e f";
+}
+
+#headshot {
+    width: 20%;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    float: right;
+}
+
+html {
+    background-color: #fffffa;
+    width: 96%;
+    margin: auto;
+}
+
+body {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+a, .home-nav {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.home-nav {
+    font-size: 1.5em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a {color: darkred};
+
+#photo-caption {
+    margin-top: 15%;
+    font-size: 0.6em;
+}
+
+button {
+    border: none;
+    background: none;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+button:hover {
+    opacity: 60%;
+}
+
+button:active {
+    opacity: 40%;
+}
+
+#contact {
+    font-size: 1.4em;
+}
+
+#day, #time {
+    text-decoration: underline;
+}
+
+#clock {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+h1 {
+    margin-bottom: 1px;
+    font-size: 100%;
+}
+
+h3, h4 {
+    font-size: 2em;
+    margin-bottom: 1px;
+}
+
+p, ul {
+    font-size: 1.6em;
+}
+
+.home-nav {font-size: 1.2em;}
+
+header {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    font-size: 1.9rem;
+}
+
+ul {padding-left: 4px;}
+
+#blog-items, #written-works {padding-left: 20px;}
+
+.a {grid-area: a;}
+.b {grid-area: b;}
+.c {grid-area: c;}
+.d {grid-area: d;}
+.e {grid-area: e;}
+.f {grid-area: f;}
+
+@media (prefers-color-scheme:dark){
+    html {
+      background-color: #2d2d2d;
+    }
+
+    h1, p, #clock, #research-interests, #blog-items, #written-works {
+        color: #e4e4e4;
+    }
+
+    a, a:visited {color: #f9efa5}
+    
+    h3 {color: #8da6e6}
+
+    .webpage-title {color: lightcoral;}
+}
+
+@media(max-width:768px){
+    h1 {font-size: 2rem;}
+
+    .home-nav {font-size: 1.1em;}
+
+    p, header, #research-interests, #blog-items, #written-works {font-size: 1.3em;}
+
+    h3 {font-size: 1.7em;}
+
+    #clock {font-size: 1.5em;}
+
+    #headshot {
+        margin-right: 2%; 
+        width: 22%; 
+        margin-top: 2.8%;}
+}
+
+@media(max-width:320px){
+    #home {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "a"
+        "b"
+        "c";
+        font-size: 0.5em;
+    }
+
+    #left, #display {
+        width: 100%;
+        height: 80%;
+    }
+
+    #photo-options {width: 100%;}
+
+    #photo-options {
+        gap: 2px;
+    }
+
+    #right, #right h1 {
+        display: block;
+        margin-top: 0%;
+        margin-left: 13%;
+        font-size: 2rem;
+    }
+
+    #right ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        margin-left: 0%;
+        margin-right: 18%;
+        justify-content: space-around;
+    }
+    
+    #home a, header {font-size: 1.3rem;}
+
+    #headshot {
+        width: 95px;
+        height: 120px;
+    }
+
+    #research-interests {
+        display: grid;
+        margin: 5%;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 25%;
+        grid-template-areas:
+        "a b"
+        "c d"
+        "e f";
+    }
+
+    #clock {font-size: 1.4em;}
+
+    h3 {font-size: 1.7em;}
+
+    p, #research-interests, #blog-items, #written-works {font-size: 1.2em;}
+
+    h1, .home-nav {
+        font-size: 2rem;
+    }
+
+    #headshot {margin-bottom: 0%}
+}
