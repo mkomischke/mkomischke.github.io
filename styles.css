@@ -113,7 +113,7 @@ button:active {
 }
 
 #contact {
-    font-size: 1.4em;
+    font-size: 1.6em;
 }
 
 #day, #time {
@@ -127,7 +127,7 @@ button:active {
 
 h1 {
     margin-bottom: 1px;
-    font-size: 100%;
+    /* font-size: 100%; */
 }
 
 h3, h4 {
