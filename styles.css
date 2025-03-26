@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 
-h1, h3, p, a, li {
+h1, h3, p, a, li, time {
     font-family: "Dongle", serif;
     font-weight: 300;
     font-style: normal;
@@ -65,7 +65,7 @@ h1, h3, p, a, li {
 
 html {
     background-color: #fffffa;
-    width: 96%;
+    width: 92%;
     margin: auto;
 }
 
@@ -83,7 +83,7 @@ a, .home-nav {
 }
 
 .home-nav {
-    font-size: 1.5em;
+    font-size: 1.9em;
 }
 
 a:hover {
@@ -135,11 +135,29 @@ h3, h4 {
     margin-bottom: 1px;
 }
 
-p, ul {
+p, li, time {
     font-size: 1.6em;
 }
 
-.home-nav {font-size: 1.2em;}
+.nn {
+    color: #0000CB;
+}
+
+.article-title {
+    height: 25px;
+}
+
+.article-info {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.timetoread {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
 
 header {
     display: flex;
@@ -158,6 +176,8 @@ ul {padding-left: 4px;}
 .d {grid-area: d;}
 .e {grid-area: e;}
 .f {grid-area: f;}
+
+/* RESPONSIVE DESIGN STARTING HERE */
 
 @media (prefers-color-scheme:dark){
     html {
