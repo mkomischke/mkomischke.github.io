@@ -17,7 +17,7 @@ h1, h3, p, a, li, time {
 
 #display {
     width: 100%;
-    height: 70%;
+    height: 66%;
 }
 
 #right {
@@ -28,8 +28,8 @@ h1, h3, p, a, li, time {
 #photo-options {
     display: flex;
     flex-direction: row;
-    width: 80%;
-    gap: 3px;
+    width: 100%;
+    gap: 2px;
 }
 
 #left-button img, #middle-button img, #right-button img {
@@ -58,7 +58,7 @@ h1, h3, p, a, li, time {
     width: 20%;
     margin-left: 5%;
     margin-right: 2%;
-    margin-top: 2%;
+    margin-top: 3%;
     margin-bottom: 3%;
     float: right;
 }
@@ -83,7 +83,7 @@ a, .home-nav {
 }
 
 .home-nav {
-    font-size: 1.9em;
+    font-size: 2.1vw;
 }
 
 a:hover {
@@ -113,7 +113,7 @@ button:active {
 }
 
 #contact {
-    font-size: 1.6em;
+    font-size: 1.9vw;
 }
 
 #day, #time {
@@ -127,16 +127,16 @@ button:active {
 
 h1 {
     margin-bottom: 1px;
-    /* font-size: 100%; */
+    font-size: 2.4vw;
 }
 
 h3, h4 {
-    font-size: 2em;
+    font-size: 2vw;
     margin-bottom: 1px;
 }
 
 p, li, time {
-    font-size: 1.6em;
+    font-size: 1.9vw;
 }
 
 .nn {
@@ -163,7 +163,7 @@ header {
     display: flex;
     flex-direction: row;
     gap: 25px;
-    font-size: 1.9rem;
+    font-size: 2vw;
 }
 
 ul {padding-left: 4px;}
@@ -201,6 +201,8 @@ ul {padding-left: 4px;}
     .home-nav {font-size: 1.1em;}
 
     p, header, #research-interests, #blog-items, #written-works {font-size: 1.3em;}
+
+    li {font-size:1em;}
 
     h3 {font-size: 1.7em;}
 
